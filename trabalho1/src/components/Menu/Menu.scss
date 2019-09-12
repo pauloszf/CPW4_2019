@@ -1,0 +1,11 @@
+@import '../../Cores.scss';
+@import '../fonts/Fonts.scss';
+
+.conteiner {
+    padding: 0px;
+    margin: 0;
+    border: 0;
+    background-color: $cor-menu;
+    width: 25%;
+    font-family: $fonte-decorativa;
+}
