@@ -1,15 +1,27 @@
 import React from '../../../node_modules/react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 import './Menu.scss';
 
 const Menu = () => 
 <div className="conteiner">
     <div>
-        <h3>Paulo</h3>
+        <div className="menuNome">
+            <h3>Paulo</h3>
+        </div>
         <div className="menu">
-            <p>Home</p>
-            <p>Bio</p>
-            <p>Contato</p>
+            <div className="linkDiv">
+                <br />
+                <Link className="link" to="/">Home</Link>
+            </div>
+            <div>
+                <br />
+                <Link className="link" to="/bio">Bio</Link>
+            </div>
+            <div>
+                <br />
+                <Link className="link" to="/contato">Contato</Link>
+            </div>
         </div>
     </div>
 </div>;

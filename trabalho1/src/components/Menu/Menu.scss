@@ -2,10 +2,51 @@
 @import '../fonts/Fonts.scss';
 
 .conteiner {
-    padding: 0px;
     margin: 0;
-    border: 0;
     background-color: $cor-menu;
-    width: 25%;
+    width: 100%;
     font-family: $fonte-decorativa;
+
+    .menuNome {
+        text-align: center;
+    }
+    .menuNome h3 {
+        border-bottom: solid 2px #FFF !important;
+        font-size: 125%;
+        margin: 0px 30px;
+        padding: 20px;
+        color: #FFF; 
+    }
+    .link {
+        text-decoration: none;
+        color: #FFF;
+    }
+    .link:hover {
+        color: #FFF;
+    }
+    .menu {
+        width: 100%;
+        text-align: center;
+    }   
+}
+.homeImg {
+    width: 5%;
+    position: relative;
+    left: 50%;
+    top: 20vh;
+    -webkit-filter:brightness(0) invert(1);
+}
+.bioImg {
+    width: 5%;
+    position: relative;
+    left: 50%;
+    top: 57vh;
+    -webkit-filter:brightness(0) invert(1);
+}
+.contatoImg {
+    width: 5%;
+    position: relative;
+    left: 50%;
+    top: 20vh;
+    -webkit-filter:brightness(0) invert(1);
 }
