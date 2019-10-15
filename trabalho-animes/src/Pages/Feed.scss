@@ -1,0 +1,74 @@
+@import '../cores.scss';
+
+body {
+    background-color: $cor-fundo;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.animes {
+    display: inline-flex;
+    width: 50%;
+
+    .animeLink{
+        color: $cor-fonte-principal;
+    }
+
+    .animeBox {
+        padding: 5px;
+    }
+
+    .animeBox img {
+        width: 170px;
+        height: 250px;
+        border-radius: 5px;
+    }
+
+    .animeTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.search {
+    margin: 10px;
+    background-color: #3A5969;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .search-button {
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    .search-button:hover {
+        background-color: #6F8691;
+    }
+    .search-button img{
+        width: 20px;
+        height: 20px;
+    }
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 40px;
+        padding: 0 20px;
+        width: 78%;
+    }
+}

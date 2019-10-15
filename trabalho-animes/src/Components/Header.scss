@@ -1,0 +1,23 @@
+@import '../cores.scss';
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: $cor-header;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    .logoSolo {
+        width: 22%;
+    }
+}
+
+.menu img {
+    width: 200px;
+}

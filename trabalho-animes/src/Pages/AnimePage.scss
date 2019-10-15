@@ -1,0 +1,54 @@
+@import '../cores.scss';
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $cor-fonte-principal;
+}
+.animePageNav {
+    vertical-align: center;
+    img {
+        width: 10%;
+        margin: 10px;
+    }
+}
+
+.animePageTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin: 10px;
+        width: 220px;
+        height: 320px;;
+    }
+}
+
+.animePageTitle {
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.animePageRating {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.animePageMid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    color: #737373;
+}
+
+.animePageDescription {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+}
