@@ -1,0 +1,108 @@
+.pesquisa {
+    display: flex;
+    vertical-align: center;
+    justify-content: space-around;
+    .campo-pesquisa {
+        margin: 20px;
+        width: 60%;
+        padding: 10px;
+        border: 0;
+        //border-bottom: 1px solid #757575;
+        box-shadow: 1px 2px 2px #CCC, -1px -1px 2px #DDD;
+        border-radius: 30px;
+        outline: none;
+        font-size: 120%;
+        text-align: center;
+    }
+    
+    @keyframes pulse {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        33% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(3);
+          opacity: 0;
+        }
+      }
+      
+      .button {
+        display: inline-flex;
+        align-items: center;
+        margin: 17px 0 0 -140px;
+        background: #212121;
+        box-shadow: 0 3px 2px 0 rgba(0,0,0,0.1);
+        border-radius: 5px;
+        height: 45px;
+        padding: 0 30px;
+        color: #fff;
+        font-family: Lato, Arial, sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background .3s, transform .3s, box-shadow .3s;
+         will-change: transform;
+        
+        &:hover {
+          background: darken(#727272,10%);
+          box-shadow: 0 4px 17px rgba(0,0,0,0.2);
+          transform: translate3d(0, -2px, 0);
+        }
+        &:active {
+          box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+          transform: translate3d(0, 1px, 0);
+        }
+      }
+      
+      .pulse {
+        position: relative;
+        
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(255,255,255,.4);
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          opacity: 0;
+          margin: auto;
+        }
+        &:before {
+          animation: pulse 1.5s infinite linear;
+        }
+        &:after {
+          animation: pulse 2s .4s infinite linear;
+        }
+        &:hover:before, &:hover:after {
+          display: none;
+        }
+      }
+      
+}
+
+.resultados {
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    .resultado-titulo span{
+        width: 95%;
+        display: flex;
+        height: 20vh;
+        margin: 5px 0;
+        border: 1px solid #CCC;
+    }
+    .resultado-descricao span{
+        display: flex;
+        width: 95%;
+        height: 20vh;
+        margin: 5px 0;
+        border: 1px solid #CCC;
+    }
+}
